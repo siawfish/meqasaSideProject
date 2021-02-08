@@ -7,7 +7,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-brand img {
+  width: 250px;
+}
+
+.navbar-text {
+  border: 2px solid #262637;
+  border-radius: 26px;
+  padding: 0px 15px!important;
+  font-size: large;
+  margin-left: 10px;
+  color: #262637!important;
+  font-weight: 500;
+}
+
+.hero {
+  background-image: url('./assets/images/property.jpg');
+  background-position: top;
+  height: 100vh;
+}
+
+.heroContent img {
+  width: 300px;
+  padding: 10% 0;
 }
