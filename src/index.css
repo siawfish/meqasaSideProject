@@ -7,8 +7,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 100%!important;
+    padding-bottom: 40px;
+  }
+
+  .navbar{
+    display: none!important;
+  }
+
+  .callToActionWrapper {
+    display: none!important;
+  }
+
+  .darkBlueBg {
+    display: none;
+  }
+}
+
 .navbar-brand img {
   width: 250px;
+}
+
+.navbar-brand {
+  padding-left: 10%!important;
 }
 
 .navbar-text {
@@ -25,9 +48,95 @@ body {
   background-image: url('./assets/images/property.jpg');
   background-position: top;
   height: 100vh;
+  padding-left: 10%!important;
 }
 
 .heroContent img {
   width: 300px;
   padding: 10% 0;
+}
+
+.heroContent div{
+  color: #000;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.bigText {
+  font-size: 30px!important;
+}
+
+.biggestText {
+  font-size: 70px!important;
+  line-height: 70px;
+}
+
+.heroContent .biggestText {
+  margin-bottom: 30px;
+}
+
+.bigColoredText {
+  font-size: xx-large!important;
+  padding: 20px 0;
+  color: #fd5573 !important;
+  font-weight: 700!important;
+}
+
+.callToActionWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.callToActionWrapper button {
+  background-color: #fff;
+  border-radius: 26px;
+  padding: 5px 15px;
+  border:none;
+  font-size: larger;
+  margin-right: 15px;
+}
+
+.darkBlueBg {
+  background-color: #262637;
+  padding-top: 80px;
+  height: 100%!important;
+}
+
+.intro {
+  padding-left: 10%!important;
+  height: 500px;
+}
+
+.introWrapper {
+  padding-top: 50px;
+}
+
+.normalBoldText {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #262637!important;
+}
+
+.introWrapper p {
+  max-width: 60%;
+}
+
+.iconWrapper .icon {
+  font-size: 80px;
+  color: #fd5573;
+}
+
+.iconWrapper .iconLabel {
+  font-weight: 500;
+  color: #262637;
+  text-transform: capitalize;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
 }
