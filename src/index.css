@@ -106,7 +106,6 @@ body {
 
 .intro {
   padding-left: 10%!important;
-  height: 500px;
 }
 
 .introWrapper {
@@ -139,4 +138,81 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 150px;
+}
+
+.section {
+  background-color: #f0f0f0;
+  padding-top: 40px;
+}
+
+.sectionWrapper {
+  padding: 0 10%;
+  padding-bottom: 3%;
+}
+
+.sectionWrapper .bigText {
+  margin-bottom: 40px;
+}
+
+.sectionWrapper img {
+  width: 100%;
+}
+
+.neighbourhoodWrapper {
+  padding: 0 10%!important;
+}
+
+.neighbourhood {
+  width: 100%;
+  margin-top: 20px;
+  border-right: 1px solid #fff;
+  -webkit-box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.75);
+  margin-bottom: 50px;
+}
+
+.neighbourhood .head {
+  height: 120px;
+  padding: 10px;
+  background-color: #fd5573;
+  color: #fff;
+  font-weight: 600;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.neighbourhood .content {
+  padding: 30px 10px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fd557481;
+}
+
+.neighbourhood .content .amount {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.neighbourhood .content .etaWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.neighbourhood .content .eta {
+  color: #fff;
+  font-weight: 300;
+  font-size: large;
+  margin-left: 10px;
+}
+
+.neighbourhood .content .icon {
+  color: #fff;
+  font-size: larger;
 }

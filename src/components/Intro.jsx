@@ -1,14 +1,14 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Feature from '../components/Feature'
-import features from '../utils/data'
+import { features } from '../utils/data'
 
 export default function Intro() {
     return (
         <Container className="intro" fluid>
             <Row>
                 <Col sm={12} lg={8}>
-                    <Container>
+                    <Container style={{marginBottom:40}}>
                         <Row>
                             <Col>
                                 <div className="introWrapper">
