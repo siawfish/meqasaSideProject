@@ -71,3 +71,30 @@ export const proxy = [
         mode:"walk"
     },
 ]
+
+export const investments = [
+    {
+        title:"$32BN",
+        caption:"Invested so far"
+    },
+    {
+        title:"160,000",
+        caption:"Skilled jobs being created"
+    },
+    {
+        title:"$1BN",
+        caption:"In finished goods produced"
+    },
+    {
+        title:"58X",
+        caption:"Lekki free trade zoneis 58 times the size of Victoria Island."
+    },
+    {
+        title:"116",
+        caption:"Projected to house 116 domestic and foreign commercial and industrial company"
+    },
+    {
+        title:"5,000",
+        caption:"Proposed residence"
+    }
+]

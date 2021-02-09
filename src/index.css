@@ -159,7 +159,7 @@ body {
 }
 
 .neighbourhoodWrapper {
-  padding: 0 10%!important;
+  padding: 0 10% 50px!important;
 }
 
 .neighbourhood {
@@ -169,7 +169,6 @@ body {
   -webkit-box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.75);
   box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.75);
-  margin-bottom: 50px;
 }
 
 .neighbourhood .head {
@@ -215,4 +214,31 @@ body {
 .neighbourhood .content .icon {
   color: #fff;
   font-size: larger;
+}
+
+.investment .bigColoredText {
+  padding-bottom: 0;
+}
+
+.neighbourhoodWrapper p {
+  margin-top: 10px;
+}
+
+.neighbourhoodWrapper .downloadBrochure {
+  margin: 50px 0 10px;
+  font-weight: 700;
+}
+
+.neighbourhoodWrapper button {
+  background-color: #fd5573;
+  border: none;
+  min-width: 250px!important;
+  font-weight: 700;
+}
+
+.graphWrapper {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 }

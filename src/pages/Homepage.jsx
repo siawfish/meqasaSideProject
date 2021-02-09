@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Intro from '../components/Intro'
@@ -34,6 +33,10 @@ export default function Homepage() {
                 title="Neighbourhood" 
                 neighbourhood
                 backgroundColor="#ffffff"
+            />
+             <Section
+                title="Why you should invest in Silver Spring Resident Phase II" 
+                investment
             />
         </div>
     )
