@@ -122,3 +122,34 @@ export const plans = [
         totalAmount:"N9,130,000"
     }
 ]
+
+export const faqs = [
+    {
+        q:"Is there any title/document on this land?",
+        a:"Silver Spring is covered with a Global C of O."
+    },
+    {
+        q:"What are the available plot size?",
+        a:"The available plot sizes are 600sqm and 300sqm."
+    },
+    {
+        q:"What infrastructure would be provided to the land?",
+        a:"The available infrastructure would be Earth road, entrance and exit gate to the community."
+    },
+    {
+        q:"What other Payment do i need to make?",
+        a:"The following payment would be made excluding the price attached to the land: Deed of assignment: N450,000, Survey Fee: N450,000?"
+    },
+    {
+        q:"How do I subscribe?",
+        a:"You can start by filling the reserve form or giving us a call."
+    },
+    {
+        q:"Can I pay in installment?",
+        a:"Yes, you can pay in installments for a maximum duration of 12 months."
+    },
+    {
+        q:"How to inspect the development?",
+        a:"You can inspect by calling us to book your inspection date."
+    }
+]

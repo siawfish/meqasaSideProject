@@ -17,7 +17,7 @@ export default function ProxyCard({
         }
     }
     return (
-        <Col style={{padding:0}} sm={12} lg={2}>
+        <Col style={{padding:0}} sm={12} md={4} lg={2}>
             <div className="neighbourhood">
                 <div className="head">
                     {heading}
