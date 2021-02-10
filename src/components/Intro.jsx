@@ -22,20 +22,22 @@ export default function Intro() {
                                 </div>
                             </Col>
                         </Row>
-                        <Row>
-                            {
-                                features.map((feature,i)=>{
-                                    return (
-                                        <Col key={i} xs={6} lg={3}>
-                                            <Feature 
-                                                type={feature.type} 
-                                                label={feature.label} 
-                                            />
-                                        </Col>
-                                    )
-                                })
-                            }
-                        </Row>
+                        <div className="introCardsWrapper">
+                            <Row>
+                                {
+                                    features.map((feature,i)=>{
+                                        return (
+                                            <Col key={i} xs={6} lg={3}>
+                                                <Feature 
+                                                    type={feature.type} 
+                                                    label={feature.label} 
+                                                />
+                                            </Col>
+                                        )
+                                    })
+                                }
+                            </Row>
+                        </div>
                     </Container>
                 </Col>
                 <Col sm={0} style={{padding:0}} lg={4}>

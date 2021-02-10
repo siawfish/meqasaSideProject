@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif!important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -32,6 +32,10 @@ body {
   .imgWrapper button {
     left: 85px!important;
   }
+
+  .introCardsWrapper, .introWrapper p {
+    max-width: 100%!important;
+  }
 }
 
 .navbar-brand img {
@@ -50,6 +54,7 @@ body {
   margin-left: 10px;
   color: #262637!important;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .hero {
@@ -127,7 +132,7 @@ body {
   color: #262637!important;
 }
 
-.introWrapper p {
+.introWrapper p, .introCardsWrapper {
   max-width: 60%;
 }
 

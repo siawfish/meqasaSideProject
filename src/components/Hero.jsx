@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import logo from '../assets/images/meqasa-logo-final-transparent.png'
+import RevealButton from './RevealButton'
 
 export default function Hero() {
     return (
@@ -15,9 +16,13 @@ export default function Hero() {
                         <div className="bigColoredText">N4,500,000 per month (300sqm)</div>
                         <div style={{maxWidth:"60%"}}>Exclusive discount on plot sales available on meqasa.com</div>
                         <div className="callToActionWrapper">
-                            <button>Information</button>
-                            <button>Information</button>
-                            <button>Information</button>
+                            <RevealButton 
+                                label="0577**** View Phone"
+                            />
+                            <RevealButton 
+                                label="0577**** View Phone"
+                            />
+                            <button>RESERVE PLOT</button>
                         </div>
                     </div>
                 </Col>
