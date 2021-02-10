@@ -98,3 +98,27 @@ export const investments = [
         caption:"Proposed residence"
     }
 ]
+
+export const plans = [
+    {
+        heading:"300sqm (OUTRIGHT = N4,500,000)",
+        title:"6 months",
+        initialDeposit:"N761,382.40",
+        monthlyPayment:"N761,382.40",
+        totalAmount:"N4,568,294.40"
+    },
+    {
+        heading:"500sqm (OUTRIGHT = N7,600,000)",
+        title:"6 months",
+        initialDeposit:"N1,283,333.33",
+        monthlyPayment:"N1,283,333.33",
+        totalAmount:"N7,700,000"
+    },
+    {
+        heading:"600sqm (OUTRIGHT = N9,000,000)",
+        title:"6 months",
+        initialDeposit:"N1,521,666.67",
+        monthlyPayment:"N1,521,666.67",
+        totalAmount:"N9,130,000"
+    }
+]
