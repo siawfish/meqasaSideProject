@@ -2,10 +2,17 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Feature from '../components/Feature'
 import { features } from '../utils/data'
+import ReactPlayer from "react-player"
 
 export default function Intro() {
     return (
         <Container className="intro" fluid>
+            <div className="youtubeVideo">
+                <ReactPlayer
+                    url="https://www.youtube.com/watch?v=PxinofXvf9c"
+                    height={450}
+                />
+            </div>
             <Row>
                 <Col sm={12} lg={8}>
                     <Container style={{marginBottom:40}}>

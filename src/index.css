@@ -36,6 +36,10 @@ body {
   .introCardsWrapper, .introWrapper p {
     max-width: 100%!important;
   }
+
+  .youtubeVideo {
+    display: none;
+  }
 }
 
 .navbar-brand img {
@@ -119,6 +123,18 @@ body {
 
 .intro {
   padding-left: 10%!important;
+  position: relative;
+}
+
+.youtubeVideo {
+  position: absolute;
+  right: 10%;
+  z-index: 3;
+  top: 10%;
+}
+
+.youtubeVideoMobile {
+  display: none;
 }
 
 .introWrapper {
