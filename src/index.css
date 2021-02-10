@@ -235,6 +235,7 @@ body {
   min-width: 250px!important;
   font-weight: 700;
   padding: 15px;
+  margin-bottom: 40px;
 }
 
 .graphWrapper {
@@ -246,4 +247,60 @@ body {
 
 .graphWrapper img {
   width: 100%;
+}
+
+.pricePlan {
+  padding: 3% 10%!important;
+}
+
+.biggerText {
+  font-size: 30px!important;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.table {
+  margin: 20px 0 50px!important;
+}
+
+.tableHeader {
+  padding: 10px;
+  background-color: #262637;
+  color: #fff;
+  font-weight: 500;
+  font-size: large;
+  text-align: center;
+}
+
+.tableRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #484848;
+  font-size: large;
+  border-bottom: 1px solid #262637;
+}
+
+.tableRow .right .little {
+  color: #ff7f7f;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tableRow .right .medium {
+  color: #666666;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tableRow .right .large {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
 }

@@ -8,6 +8,8 @@ import proximityImg from '../assets/images/proximity-img.png'
 import cr1 from '../assets/images/cr1.jpg'
 import cr2 from '../assets/images/cr2.jpg'
 import cr3 from '../assets/images/cr3.jpg'
+import { Container, Row, Col } from 'react-bootstrap'
+import PricePlan from '../components/PricePlan'
 
 export default function Homepage() {
     return (
@@ -38,6 +40,7 @@ export default function Homepage() {
                 title="Why you should invest in Silver Spring Resident Phase II" 
                 investment
             />
+            <PricePlan />
         </div>
     )
 }
