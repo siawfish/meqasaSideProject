@@ -2,8 +2,9 @@ import React from 'react'
 import { Col } from 'react-bootstrap'
 
 export default function PriceCard({
-    heading,
-    title,
+    duration,
+    area,
+    price,
     initialDeposit,
     monthlyPayment,
     totalAmount
@@ -12,12 +13,12 @@ export default function PriceCard({
         <Col sm={12} lg={4}>
             <div className="priceCard">
                 <div className="colorbg"></div>
-                <div className="duration">6 months</div>
-                <div className="area">300sqm</div>
-                <div className="price">Price: N4,500,000</div>
-                <div className="list">Initial deposit: <span className="amount">N761,382.40</span></div>
-                <div className="list">Monthly payment: <span className="amount">N761,382.40</span></div>
-                <div className="list">Total amount: <span className="amount">N761,382.40</span></div>
+                <div className="duration">{duration}</div>
+                <div className="area">{area}</div>
+                <div className="price">Price: &#8373;{price}</div>
+                <div className="list">Initial deposit: <span className="amount">&#8373;{initialDeposit}</span></div>
+                <div className="list">Monthly payment: <span className="amount">&#8373;{monthlyPayment}</span></div>
+                <div className="list">Total amount: <span className="amount">&#8373;{totalAmount}</span></div>
             </div>
         </Col>
     )

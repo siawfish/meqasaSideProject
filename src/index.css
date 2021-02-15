@@ -212,16 +212,17 @@ body {
 .neighbourhood {
   width: 100%;
   margin-top: 20px;
+  padding: 10%;
   border-right: 1px solid #fff;
   -webkit-box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.75);
   box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.75);
+  background-image: linear-gradient(to bottom, #fd5573, #f0b0bc)
 }
 
 .neighbourhood .head {
   height: 120px;
-  padding: 10px;
-  background-color: #fd5573;
+  border-bottom: 1px solid #fff;
   color: #fff;
   font-weight: 600;
   font-size: large;
@@ -231,11 +232,10 @@ body {
 }
 
 .neighbourhood .content {
-  padding: 30px 10px 40px;
+  padding: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fd557481;
 }
 
 .neighbourhood .content .amount {
@@ -246,8 +246,9 @@ body {
 
 .neighbourhood .content .etaWrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0 10px;
 }
 
@@ -255,12 +256,13 @@ body {
   color: #fff;
   font-weight: 300;
   font-size: large;
-  margin-left: 10px;
+  text-align: center;
 }
 
 .neighbourhood .content .icon {
   color: #fff;
   font-size: larger;
+  margin-top: 30px;
 }
 
 .investment .bigColoredText {

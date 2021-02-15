@@ -12,7 +12,14 @@ export default function PricePlan() {
                 plans.map((plan,i)=>{
                     return (
 
-                        <PriceCard />
+                        <PriceCard 
+                            duration={plan.duration}
+                            area={plan.area}
+                            price={plan.price}
+                            initialDeposit={plan.initialDeposit}
+                            monthlyPayment={plan.monthlyPayment}
+                            totalAmount={plan.totalAmount}
+                        />
                     )
                 })
             }

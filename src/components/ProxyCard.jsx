@@ -23,14 +23,15 @@ export default function ProxyCard({
                     {heading}
                 </div>
                 <div className="content">
-                    <div className="amount">N{amount}m</div>
+                    <div className="amount">&#8373;{amount}m</div>
                     <div className="etaWrapper">
+                        <div className="eta">{eta}</div>
+
                         <div className="icon">
                             {
                                 renderIcon()
                             }
                         </div>
-                        <div className="eta">{eta}</div>
                     </div>
                 </div>
             </div>
