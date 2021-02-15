@@ -44,6 +44,10 @@ body {
   .priceCard {
     max-width: 100%!important;
   }
+
+  .accordion>.card>.card-header {
+    padding-right: 55px;
+  }
 }
 
 .navbar-brand img {
