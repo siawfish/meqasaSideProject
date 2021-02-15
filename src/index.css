@@ -40,6 +40,10 @@ body {
   .youtubeVideo {
     display: none;
   }
+
+  .priceCard {
+    max-width: 100%!important;
+  }
 }
 
 .navbar-brand img {
@@ -496,4 +500,70 @@ body {
 button:hover {
   background-color: #fd5573!important;
   opacity: 0.5!important;
+}
+
+.priceCard {
+  background-color: #f0f0f0;
+  border-radius: 26px;
+  padding: 5%;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.priceCard .duration {
+  font-size: larger;
+  font-weight: 700;
+  color: #fff;
+  z-index: 2;
+}
+
+.priceCard .area {
+  font-size: small;
+  font-weight: 700;
+  color: #fff;
+  z-index: 2;
+}
+
+.priceCard .price {
+  font-size: larger;
+  font-weight: 700;
+  color: #fff;
+  z-index: 2;
+  margin-bottom: 40px;
+}
+
+.priceCard .list {
+  font-size: normal;
+  font-weight: 700;
+  color: #fff;
+  z-index: 2;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+
+.priceCard .amount {
+  font-size: larger;
+  font-weight: 700;
+  color: #fd5573;
+  z-index: 2;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+
+.colorbg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #262637;
+  border-radius: 26px;
+  border-bottom-right-radius: 50%;
+  z-index: 1;
 }
