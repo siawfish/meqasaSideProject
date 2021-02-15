@@ -3,7 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap'
 import logo from '../assets/images/meqasa-logo-final-transparent.png'
 import RevealButton from './RevealButton'
 
-export default function Hero() {
+export default function Hero({
+    onReveal,
+    showNumber
+}) {
     return (
         <Container className="hero" fluid>
             <Row>
@@ -18,9 +21,13 @@ export default function Hero() {
                         <div className="callToActionWrapper">
                             <RevealButton 
                                 label="0577**** View Phone"
+                                show={showNumber}
+                                onReveal={onReveal}
                             />
                             <RevealButton 
                                 label="0577**** View Phone"
+                                show={showNumber}
+                                onReveal={onReveal}
                             />
                             <button>RESERVE PLOT</button>
                         </div>

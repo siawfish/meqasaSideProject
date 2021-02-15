@@ -3,7 +3,10 @@ import { Navbar } from 'react-bootstrap'
 import logo from '../../src/assets/images/meqasa-logo-final-transparent.png'
 import NavButton from './NavButton'
 
-export default function Header() {
+export default function Header({
+    onReveal,
+    showNumber
+}) {
     return (
         <Navbar>
             <Navbar.Brand href="#home">
@@ -13,9 +16,13 @@ export default function Header() {
             <Navbar.Collapse className="justify-content-end">
                 <NavButton
                     label="0577**** View Phone"    
+                    onReveal={onReveal}
+                    show={showNumber}
                 />
                 <NavButton
-                    label="0577**** View Phone"    
+                    label="0577**** View Phone"
+                    onReveal={onReveal}    
+                    show={showNumber}
                 />
                 <NavButton
                     label="RESERVE PLOT"    

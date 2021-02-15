@@ -1,11 +1,12 @@
 import React from 'react'
 
 export default function RevealButton({
-    label
+    label,
+    show=false,
+    onReveal
 }) {
-    const [show, setShow] = React.useState(false)
     return (
-        <button onClick={()=>setShow(true)}>
+        <button onClick={onReveal}>
             {
                 show ?
                 "+233577075706" :

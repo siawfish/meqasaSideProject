@@ -2,11 +2,12 @@ import React from 'react'
 import { Navbar } from 'react-bootstrap'
 
 export default function NavButton({
-    label
+    label,
+    onReveal,
+    show=false
 }) {
-    const [show, setShow] = React.useState(false)
     return (
-        <Navbar.Text onClick={()=>setShow(true)}>
+        <Navbar.Text onClick={onReveal}>
             {
                 show ?
                 "+233577075706" :
