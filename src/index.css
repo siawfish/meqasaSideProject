@@ -17,10 +17,6 @@ body {
     display: none!important;
   }
 
-  .callToActionWrapper {
-    display: none!important;
-  }
-
   .darkBlueBg {
     display: none;
   }
@@ -108,9 +104,6 @@ body {
 }
 
 .callToActionWrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   margin-top: 30px;
 }
 
@@ -120,7 +113,8 @@ body {
   padding: 5px 15px;
   border:none;
   font-size: larger;
-  margin-right: 15px;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 
 .darkBlueBg {

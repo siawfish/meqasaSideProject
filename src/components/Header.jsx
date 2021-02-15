@@ -20,11 +20,6 @@ export default function Header({
                     show={showNumber}
                 />
                 <NavButton
-                    label="0577**** View Phone"
-                    onReveal={onReveal}    
-                    show={showNumber}
-                />
-                <NavButton
                     label="RESERVE PLOT"    
                 />
             </Navbar.Collapse>

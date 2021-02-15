@@ -18,19 +18,18 @@ export default function Hero({
                         <div>Serviced plot sales starts from</div>
                         <div className="bigColoredText">N4,500,000 per month (300sqm)</div>
                         <div style={{maxWidth:"60%"}}>Exclusive discount on plot sales available on meqasa.com</div>
-                        <div className="callToActionWrapper">
-                            <RevealButton 
-                                label="0577**** View Phone"
-                                show={showNumber}
-                                onReveal={onReveal}
-                            />
-                            <RevealButton 
-                                label="0577**** View Phone"
-                                show={showNumber}
-                                onReveal={onReveal}
-                            />
-                            <button>RESERVE PLOT</button>
-                        </div>
+                        <Row>
+                            <Col>
+                                <div className="callToActionWrapper">
+                                    <RevealButton 
+                                        label="0577**** View Phone"
+                                        show={showNumber}
+                                        onReveal={onReveal}
+                                    />
+                                    <button>RESERVE PLOT</button>
+                                </div>
+                            </Col>
+                        </Row>
                     </div>
                 </Col>
             </Row>
