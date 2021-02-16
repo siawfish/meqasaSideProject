@@ -7,14 +7,8 @@ import ReactPlayer from "react-player"
 export default function Intro() {
     return (
         <Container className="intro" fluid>
-            <div className="youtubeVideo">
-                <ReactPlayer
-                    url="https://www.youtube.com/watch?v=PxinofXvf9c"
-                    height={450}
-                />
-            </div>
             <Row>
-                <Col sm={12} lg={8}>
+                <Col sm={12} lg={6}>
                     <Container style={{marginBottom:40}}>
                         <Row>
                             <Col>
@@ -47,8 +41,13 @@ export default function Intro() {
                         </div>
                     </Container>
                 </Col>
-                <Col sm={0} style={{padding:0}} lg={4}>
-                    <div className="darkBlueBg"></div>
+                <Col sm={12} lg={6}>
+                    <div className="youtubeVideo">
+                        <ReactPlayer
+                            url="https://www.youtube.com/watch?v=PxinofXvf9c"
+                            width='100%'
+                        />
+                    </div>
                 </Col>
             </Row>
         </Container>

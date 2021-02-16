@@ -33,10 +33,6 @@ body {
     max-width: 100%!important;
   }
 
-  .youtubeVideo {
-    display: none;
-  }
-
   .priceCard {
     max-width: 100%!important;
   }
@@ -68,7 +64,6 @@ body {
 .hero {
   background-image: url('./assets/images/property.jpg');
   background-position: top;
-  height: 100vh;
   padding-left: 10%!important;
 }
 
@@ -105,6 +100,7 @@ body {
 
 .callToActionWrapper {
   margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .callToActionWrapper button {
@@ -112,31 +108,25 @@ body {
   border-radius: 26px;
   padding: 5px 15px;
   border:none;
-  font-size: larger;
+  font-size: large;
   margin-top: 20px;
   margin-right: 10px;
 }
 
 .darkBlueBg {
   background-color: #262637;
-  padding-top: 80px;
   height: 100%!important;
 }
 
 .intro {
   padding-left: 10%!important;
+  padding-right: 10%!important;
   position: relative;
 }
 
 .youtubeVideo {
-  position: absolute;
-  right: 10%;
-  z-index: 3;
-  top: 10%;
-}
-
-.youtubeVideoMobile {
-  display: none;
+  margin-top: 10%;
+  align-self: center;
 }
 
 .introWrapper {
@@ -148,10 +138,6 @@ body {
   font-weight: 400;
   line-height: 30px;
   color: #262637!important;
-}
-
-.introWrapper p, .introCardsWrapper {
-  max-width: 60%;
 }
 
 .iconWrapper .icon {
@@ -302,50 +288,13 @@ body {
   margin-bottom: 20px;
 }
 
-.table {
-  margin: 20px 0 50px!important;
-}
-
-.tableHeader {
-  padding: 10px;
-  background-color: #262637;
-  color: #fff;
-  font-weight: 500;
-  font-size: large;
-  text-align: center;
-}
-
-.tableRow {
-  display: flex;
-  flex-direction: row;
+.arrows {
+  height: 100%!important;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #f0f0f0;
-  color: #484848;
-  font-size: large;
-  border-bottom: 1px solid #262637;
-}
-
-.tableRow .right .little {
-  color: #ff7f7f;
-  font-size: 22px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.tableRow .right .medium {
-  color: #666666;
-  font-size: 26px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.tableRow .right .large {
-  color: #000000;
-  font-size: 26px;
-  font-weight: 500;
-  text-transform: uppercase;
+  display: flex;
+  font-size: 50px;
+  color: #262637;
 }
 
 .contactForm {
@@ -452,19 +401,21 @@ body {
 
 .imgWrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.imgWrapper h1 {
-  position: absolute;
-  top: 150px;
-  left: 80px;
+.imgWrapper h3 {
   color: #fd5573;
+  position: absolute;
+  top: 49%;
 }
 
 .imgWrapper button {
   position: absolute;
   bottom: 50px;
-  left: 100px;
   background-color: #484848;
   border: none;
   min-width: 40%;
@@ -506,7 +457,7 @@ button:hover {
   background-color: #f0f0f0;
   border-radius: 26px;
   padding: 5%;
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
   text-align: center;
   height: 350px;

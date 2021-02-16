@@ -3,6 +3,7 @@ import { Container, Row, Col, Carousel } from 'react-bootstrap'
 import { proxy } from '../utils/data';
 import ProxyCard from './ProxyCard'
 import Investment from './Investment';
+import { FaArrowCircleRight, FaArrowCircleLeft } from 'react-icons/fa'
 
 export default function Section({
     title="title",
@@ -25,21 +26,37 @@ export default function Section({
             )
         } else {
             return (
-                <Carousel activeIndex={index} onSelect={handleSelect}>
-                    {
-                        img.map((image,i)=>{
-                            return (
-                                <Carousel.Item key={i}>
-                                    <img
-                                        className="d-block w-100"
-                                        src={image}
-                                        alt=""
-                                    />
-                                </Carousel.Item>
-                            )
-                        })
-                    }
-                </Carousel>
+                <Container>
+                    <Row>
+                        <Col lg={1}>
+                            <div className="arrows">
+                                <FaArrowCircleLeft />
+                            </div>
+                        </Col>
+                        <Col lg={10}>
+                            <Carousel controls={false} activeIndex={index} onSelect={handleSelect}>
+                                {
+                                    img.map((image,i)=>{
+                                        return (
+                                            <Carousel.Item key={i}>
+                                                <img
+                                                    className="d-block w-100"
+                                                    src={image}
+                                                    alt=""
+                                                />
+                                            </Carousel.Item>
+                                        )
+                                    })
+                                }
+                            </Carousel>
+                        </Col>
+                        <Col lg={1}>
+                            <div className="arrows">
+                                <FaArrowCircleRight />
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             )
         }
     }

@@ -37,7 +37,7 @@ export default function About() {
                             <Col style={{paddingLeft:0}} lg={6} sm={12}>
                                 <div className="imgWrapper">
                                     <img alt="" src={igo} />
-                                    <h1>SOLD OUT</h1>
+                                    <h3>SOLD OUT</h3>
                                 </div>
                                 <div className="thickText">SILVER SPRING RESIDENCE PHASE I</div>
                             </Col>
