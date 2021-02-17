@@ -13,10 +13,26 @@ export default function Section({
     neighbourhood,
     investment
 }) {
-    const [index, setIndex] = React.useState(0);
+    const [index, setIndex] = React.useState(0)
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
+    }
+
+    const previous = ()=> {
+        if(index<=0){
+            setIndex(2)
+            return
+        }
+        setIndex(index-1)
+    }
+
+    const next = ()=> {
+        if(index>=2){
+            setIndex(0)
+            return
+        }
+        setIndex(index+1)
     }
 
     const renderImage = ()=> {
@@ -29,7 +45,7 @@ export default function Section({
                 <Container>
                     <Row>
                         <Col lg={1}>
-                            <div className="arrows">
+                            <div onClick={previous} className="arrows">
                                 <FaArrowCircleLeft />
                             </div>
                         </Col>
@@ -51,7 +67,7 @@ export default function Section({
                             </Carousel>
                         </Col>
                         <Col lg={1}>
-                            <div className="arrows">
+                            <div onClick={next} className="arrows">
                                 <FaArrowCircleRight />
                             </div>
                         </Col>
