@@ -11,7 +11,7 @@ export default function PriceCard({
     return (
         <Col sm={12} lg={6}>
             <div style={{marginBottom:20, fontWeight:"bold"}}>{duration} Plan</div>
-            <Table striped bordered hover>
+            <Table striped bordered responsive hover>
                 <thead>
                     <tr>
                         <th style={{textAlign:"center"}}>Plot Size</th>
