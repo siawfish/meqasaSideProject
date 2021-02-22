@@ -10,6 +10,8 @@ import cr3 from '../assets/images/cr3.jpeg'
 import PricePlan from '../components/PricePlan'
 import ContactForm from '../components/ContactForm'
 import GetDetails from '../components/GetDetails'
+import floorplan from '../assets/images/floor-plan.png'
+import FloorPlan from '../components/FloorPlan'
 
 export default function Homepage() {
     const [getContact, setGetContact] = React.useState(false)
@@ -52,10 +54,7 @@ export default function Homepage() {
                 carousel
             />
             <PricePlan />
-            {/* <Section
-                title="Floor Plan" 
-                img={[floorplan]}
-            /> */}
+            <FloorPlan />
             <Section
                 title="Proximity" 
                 img={[proximityImg]}

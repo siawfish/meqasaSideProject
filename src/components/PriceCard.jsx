@@ -22,7 +22,7 @@ export default function PriceCard({
                 </thead>
                 <tbody>
                     <tr style={{backgroundColor:"#262637"}}>
-                        <td style={{textAlign:"center", fontWeight:"bold", color:"#fff"}} colSpan="4">Ghana Cedis</td>
+                        <td style={{textAlign:"center", fontWeight:"bold", color:"#fff"}} colSpan="4">Ghana Cedis (&#8373;)</td>
                     </tr>
                     {
                         row.map(plan=>{
@@ -37,7 +37,7 @@ export default function PriceCard({
                         })
                     }
                     <tr style={{backgroundColor:"#262637"}}>
-                        <td style={{textAlign:"center", fontWeight:"bold", color:"#fff"}} colSpan="4">US Dollars</td>
+                        <td style={{textAlign:"center", fontWeight:"bold", color:"#fff"}} colSpan="4">US Dollars ($)</td>
                     </tr>
                     {
                         row.map(plan=>{
