@@ -40,6 +40,14 @@ body {
   .accordion>.card>.card-header {
     padding-right: 55px;
   }
+
+  .heroContent img {
+    width: 100%!important;
+  }
+
+  .heroContent .biggestText {
+    font-size: 50px!important;
+  }
 }
 
 .navbar-brand img {
@@ -62,20 +70,29 @@ body {
 }
 
 .hero {
-  background-image: url('./assets/images/property.jpg');
+  background-image: url('./assets/images/property.png');
   background-position: top;
   padding-left: 10%!important;
 }
 
 .heroContent img {
-  width: 300px;
-  padding: 10% 0;
+  width: 500px;
+}
+
+.groupLogoWrapper {
+  background-color: rgba(255, 255, 255, 0.582);
+  width: fit-content;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  margin-bottom: 5%;
 }
 
 .heroContent div{
-  color: #000;
+  color: #fff;
   font-size: larger;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .bigText {
@@ -93,7 +110,6 @@ body {
 
 .bigColoredText {
   font-size: xx-large!important;
-  padding: 20px 0;
   color: #fd5573 !important;
   font-weight: 700!important;
 }
@@ -123,10 +139,15 @@ body {
   padding-right: 10%!important;
   position: relative;
 }
-
+/* 
 .youtubeVideo {
-  margin-top: 10%;
+  
   align-self: center;
+} */
+
+.youtubeVideo img {
+  margin-top: 10%;
+  width: 100%;
 }
 
 .introWrapper {

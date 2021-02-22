@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Feature from '../components/Feature'
 import { features } from '../utils/data'
-import ReactPlayer from "react-player"
+import unamed from "../assets/images/unnamed.jpg"
 
 export default function Intro() {
     return (
@@ -13,40 +13,48 @@ export default function Intro() {
                         <Row>
                             <Col>
                                 <div className="introWrapper">
-                                    <div className="normalBoldText">Introducing</div>
-                                    <div style={{marginBottom:20}} className="normalBoldText">Silver Spring Residence Phase II</div>
+                                    <div className="normalBoldText" style={{marginBottom:20}} >Introducing Wala Park</div>
                                     <p>
-                                        Welcome to Silver Spring Residence Phase II, the future of living. Silver Spring 
-                                        Residence is located within the axis of Ibeju-Lekki, just a mile away from The Free Trade Zone.
+                                        Wala Park is a new 76-acre residential neighbourhood by Appolonia Development Company Ltd, the owner and developer of 
+                                        Appolonia City, in partnership with the Chiefs, leaders and residents of the Appolonia community.
                                     </p>
-                                    <p>Silver Spring Residence Phase II is designed to give you a larger than life perspective of living.</p>
+                                    <p>
+                                        Wala Park is located between Oyibi and Afienya, bordering Appolonia City, Greater Accra’s new city where more than 700 homes 
+                                        are already occupied or under construction, and schools and dozens of businesses are under development.
+                                    </p>
                                 </div>
                             </Col>
                         </Row>
-                        <div className="introCardsWrapper">
-                            <Row>
-                                {
-                                    features.map((feature,i)=>{
-                                        return (
-                                            <Col key={i} xs={6} lg={3}>
-                                                <Feature 
-                                                    type={feature.type} 
-                                                    label={feature.label} 
-                                                />
-                                            </Col>
-                                        )
-                                    })
-                                }
-                            </Row>
-                        </div>
+                        <Row>
+                            <Col>
+                                <div className="introWrapper">
+                                    <div className="normalBoldText" style={{marginBottom:20, marginTop:-30}} >Infrastructure</div>
+                                    <ul>
+                                        <li>
+                                            The government, through the Electricity Company of Ghana, will provide power, as is
+                                            its obligation once there is a critical mass of homeowners
+                                        </li>
+                                        <li>
+                                            Cleared and provision of accessible roads but with no concrete drains and tarmac.
+                                            The expectation is that over time the government will complete the roads with
+                                            tarmac.
+                                        </li>
+                                        <li>
+                                            Residents will still benefit from the services within Appolonia City, such as nearby
+                                            shops, medical facilities, schools and parks and open spaces.
+                                        </li>
+                                        <li>
+                                            Cleared site, Cut and levelled ground with allotted plots
+                                        </li>
+                                    </ul>
+                                </div>
+                            </Col>
+                        </Row>
                     </Container>
                 </Col>
                 <Col sm={12} lg={6}>
                     <div className="youtubeVideo">
-                        <ReactPlayer
-                            url="https://www.youtube.com/watch?v=PxinofXvf9c"
-                            width='100%'
-                        />
+                        <img src={unamed} alt="" />
                     </div>
                 </Col>
             </Row>

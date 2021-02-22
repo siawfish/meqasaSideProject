@@ -4,32 +4,8 @@ export const features = [
         label:"C of O"
     },
     {
-        type:"swimmingPool",
-        label:"Cutting hedge swimming pool" 
-    },
-    {
-        type:"gym",
-        label:"Fully equipped gym" 
-    },
-    {
-        type:"leisure",
-        label:"Leisure podium" 
-    },
-    {
-        type:"garden",
-        label:"Garden" 
-    },
-    {
         type:"roads",
         label:"Internal paved roads" 
-    },
-    {
-        type:"cctv",
-        label:"CCTV" 
-    },
-    {
-        type:"playground",
-        label:"Children play area" 
     }
 ]
 
@@ -101,28 +77,36 @@ export const investments = [
 
 export const plans = [
     {
-        area:"300sqm",
-        price:"4,500,000",
-        duration:"6 months",
-        initialDeposit:"761,382.40",
-        monthlyPayment:"761,382.40",
-        totalAmount:"4,568,294.40"
+        area:"260sqm",
+        price:"40,000",
+        duration:"1 Year",
+        initialDeposit:"10,000",
+        monthlyPayment:"2,500",
+        totalAmount:"40,000"
     },
     {
-        area:"500sqm",
-        price:"7,600,000",
-        duration:"6 months",
-        initialDeposit:"1,283,333.33",
-        monthlyPayment:"1,283,333.33",
-        totalAmount:"7,700,000"
+        area:"325sqm",
+        price:"50,000",
+        duration:"1 Year",
+        initialDeposit:"12,500",
+        monthlyPayment:"3,125",
+        totalAmount:"50,000"
     },
     {
-        area:"600sqm",
-        price:"9,000,000",
-        duration:"6 months",
-        initialDeposit:"1,521,666.67",
-        monthlyPayment:"1,521,666.67",
-        totalAmount:"9,130,000"
+        area:"260sqm",
+        price:"40,000",
+        duration:"2 Years",
+        initialDeposit:"10,000",
+        monthlyPayment:"1,469",
+        totalAmount:"45,245"
+    },
+    {
+        area:"325sqm",
+        price:"50,000",
+        duration:"2 Years",
+        initialDeposit:"12,500",
+        monthlyPayment:"1,944",
+        totalAmount:"59,167"
     }
 ]
 

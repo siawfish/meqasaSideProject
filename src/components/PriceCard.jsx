@@ -10,7 +10,7 @@ export default function PriceCard({
     totalAmount
 }) {
     return (
-        <Col sm={12} lg={4}>
+        <Col sm={12} lg={3}>
             <div className="priceCard">
                 <div className="colorbg"></div>
                 <div className="duration">{duration}</div>
