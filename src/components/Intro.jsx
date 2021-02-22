@@ -1,7 +1,5 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import Feature from '../components/Feature'
-import { features } from '../utils/data'
 import unamed from "../assets/images/unnamed.jpg"
 
 export default function Intro() {

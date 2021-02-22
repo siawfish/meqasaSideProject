@@ -75,38 +75,52 @@ export const investments = [
     }
 ]
 
+export const planDuration = ["One Year", "Two Years"]
+
 export const plans = [
     {
-        area:"260sqm",
+        area:"40ft x 70ft (260sqm)",
         price:"40,000",
-        duration:"1 Year",
+        duration:"One Year",
         initialDeposit:"10,000",
         monthlyPayment:"2,500",
-        totalAmount:"40,000"
+        totalAmount:"40,000",
+        initialDepositUSD:"1,625",
+        monthlyPaymentUSD:"406",
+        totalAmountUSD:"6,500"
     },
     {
-        area:"325sqm",
+        area:"50ft x 70ft (325sqm)",
         price:"50,000",
-        duration:"1 Year",
+        duration:"One Year",
         initialDeposit:"12,500",
         monthlyPayment:"3,125",
-        totalAmount:"50,000"
+        totalAmount:"50,000",
+        initialDepositUSD:"2,125",
+        monthlyPaymentUSD:"531",
+        totalAmountUSD:"8,500"
     },
     {
-        area:"260sqm",
+        area:"40ft x 70ft (260sqm)",
         price:"40,000",
-        duration:"2 Years",
+        duration:"Two Years",
         initialDeposit:"10,000",
         monthlyPayment:"1,469",
-        totalAmount:"45,245"
+        totalAmount:"45,245",
+        initialDepositUSD:"1,625",
+        monthlyPaymentUSD:"223",
+        totalAmountUSD:"6,988"
     },
     {
-        area:"325sqm",
+        area:"50ft x 70ft (325sqm)",
         price:"50,000",
-        duration:"2 Years",
+        duration:"Two Years",
         initialDeposit:"12,500",
         monthlyPayment:"1,944",
-        totalAmount:"59,167"
+        totalAmount:"59,167",
+        initialDepositUSD:"2,125",
+        monthlyPaymentUSD:"292",
+        totalAmountUSD:"9,138"
     }
 ]
 
