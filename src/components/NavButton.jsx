@@ -4,15 +4,11 @@ import { Navbar } from 'react-bootstrap'
 export default function NavButton({
     label,
     onReveal,
-    show=false
+    number
 }) {
     return (
         <Navbar.Text onClick={onReveal}>
-            {
-                show ?
-                "+233577075706" :
-                label
-            }
+            { number || label }
         </Navbar.Text>
     )
 }

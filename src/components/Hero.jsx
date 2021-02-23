@@ -5,7 +5,7 @@ import RevealButton from './RevealButton'
 
 export default function Hero({
     onReveal,
-    showNumber,
+    number,
     onReserve
 }) {
     return (
@@ -26,7 +26,7 @@ export default function Hero({
                                 <div className="callToActionWrapper">
                                     <RevealButton 
                                         label="0577**** View Phone"
-                                        show={showNumber}
+                                        number={number}
                                         onReveal={onReveal}
                                     />
                                     <button onClick={onReserve}>RESERVE PLOT</button>

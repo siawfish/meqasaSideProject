@@ -480,6 +480,10 @@ button:hover {
   opacity: 0.5!important;
 }
 
+button:focus {
+  background-color: #fd5573!important;
+}
+
 .priceCard {
   background-color: #f0f0f0;
   border-radius: 26px;
@@ -544,4 +548,11 @@ button:hover {
   border-radius: 26px;
   border-bottom-right-radius: 50%;
   z-index: 1;
+}
+
+.err {
+  font-size: small;
+  color: red;
+  text-align: center;
+  padding: 10px;
 }

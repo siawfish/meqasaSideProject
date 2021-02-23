@@ -5,7 +5,7 @@ import NavButton from './NavButton'
 
 export default function Header({
     onReveal,
-    showNumber,
+    number,
     onReserve
 }) {
     return (
@@ -18,7 +18,7 @@ export default function Header({
                 <NavButton
                     label="0577**** View Phone"    
                     onReveal={onReveal}
-                    show={showNumber}
+                    number={number}
                 />
                 <NavButton
                     label="RESERVE PLOT"    

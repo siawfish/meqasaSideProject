@@ -2,16 +2,12 @@ import React from 'react'
 
 export default function RevealButton({
     label,
-    show=false,
+    number,
     onReveal
 }) {
     return (
         <button onClick={onReveal}>
-            {
-                show ?
-                "+233577075706" :
-                label
-            }
+            {number}
         </button>
     )
 }

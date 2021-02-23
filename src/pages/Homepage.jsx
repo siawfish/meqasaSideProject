@@ -11,32 +11,69 @@ import PricePlan from '../components/PricePlan'
 import ContactForm from '../components/ContactForm'
 import GetDetails from '../components/GetDetails'
 import FloorPlan from '../components/FloorPlan'
+import { create } from 'apisauce'
+
+const api = create({
+    baseURL: 'https://meqasa.com/',
+    headers: { 
+        Accept: 'application/vnd.github.v3+json' 
+    }
+})
 
 export default function Homepage() {
     const [getContact, setGetContact] = React.useState(false)
-    const [showContact, setshowContact] = React.useState(false)
+    const [contact, setContact] = React.useState("0244 **** View Phone")
     const [contactDetails, setContactDetails] = React.useState({
         name:"",
-        phone:""
+        phone:"",
+        uid:1714
     })
+    const [err, setErr] = React.useState("")
     const form = React.useRef()
+
     const handleOpen = ()=> {
         setGetContact(true)
     }
+
     const handleClose = ()=> {
+        setErr("")
         setGetContact(false)
     }
+
     const onSubmitDetails = ()=> {
-        console.log(contactDetails)
-        handleClose()
-        setshowContact(true)
+        if(contactDetails.name.length<4){
+            setErr("Kindly enter a valid name")
+            return
+        } else if(contactDetails.phone.length<10){
+            setErr("Kindly enter a valid phone")
+            return
+        } else {
+            api.post("commune", contactDetails)
+            .then(res=>{
+                if(res.ok){
+                    if(res.data.status==="success"){
+                        setContact(res.data.p)
+                        handleClose()
+                    } else {
+                        setErr("Sorry request failed. Please try again")
+                    }
+                } else {
+                    setErr(res.problem)
+                }
+            })
+            .catch(e=>console.log(e))
+        }
+        
     }
+
     const onDetailsChange = (name,e)=> {
+        setErr("")
         setContactDetails({
             ...contactDetails,
             [name]:e.target.value
         })
     }
+
     const gotoForm = (e)=>{
         e.preventDefault()
         window.scrollTo({
@@ -45,16 +82,17 @@ export default function Homepage() {
             behavior: "smooth"
         })
     }
+    
     return (
         <div>
             <Header 
                 onReveal={handleOpen} 
-                showNumber={showContact}
+                number={contact}
                 onReserve={gotoForm}
             />
             <Hero 
                 onReveal={handleOpen} 
-                showNumber={showContact}
+                number={contact}
                 onReserve={gotoForm}
             />
             <Intro />
@@ -76,6 +114,7 @@ export default function Homepage() {
                 onHide={handleClose}
                 onChange={onDetailsChange}
                 onSubmit={onSubmitDetails}
+                err={err}
             />
         </div>
     )
