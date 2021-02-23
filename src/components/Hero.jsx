@@ -5,7 +5,8 @@ import RevealButton from './RevealButton'
 
 export default function Hero({
     onReveal,
-    showNumber
+    showNumber,
+    onReserve
 }) {
     return (
         <Container className="hero" fluid>
@@ -16,11 +17,10 @@ export default function Hero({
                             <img src={logo} alt="" />
                         </div>
                         <div className="bigText">Presents</div>
-                        <div className="biggestText">Silver Spring Residence Phase II</div>
+                        <div className="biggestText">WALA PARK</div>
                         <div>Serviced plot sales starts from</div>
                         <div style={{marginTop:"20px"}} className="bigColoredText">40ft x 70ft for &#8373;40,000 (260sqm)</div>
                         <div style={{marginBottom:"20px"}} className="bigColoredText">50ft x 70ft for &#8373;50,000 (325sqm)</div>
-                        <div style={{maxWidth:"60%"}}>Exclusive discount on plot sales available on meqasa.com</div>
                         <Row>
                             <Col>
                                 <div className="callToActionWrapper">
@@ -29,7 +29,7 @@ export default function Hero({
                                         show={showNumber}
                                         onReveal={onReveal}
                                     />
-                                    <button>RESERVE PLOT</button>
+                                    <button onClick={onReserve}>RESERVE PLOT</button>
                                 </div>
                             </Col>
                         </Row>

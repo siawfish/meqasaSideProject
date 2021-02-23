@@ -5,7 +5,8 @@ import NavButton from './NavButton'
 
 export default function Header({
     onReveal,
-    showNumber
+    showNumber,
+    onReserve
 }) {
     return (
         <Navbar>
@@ -21,6 +22,7 @@ export default function Header({
                 />
                 <NavButton
                     label="RESERVE PLOT"    
+                    onReveal={onReserve}
                 />
             </Navbar.Collapse>
         </Navbar>

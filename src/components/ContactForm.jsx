@@ -1,9 +1,11 @@
 import React from 'react'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 
-export default function ContactForm() {
+export default function ContactForm({
+    reference
+}) {
     return (
-        <Container className="contactForm" fluid>
+        <Container ref={reference} className="contactForm" fluid>
             <div className="biggerText">Register your interest</div>
             <Row>
                 <Col>

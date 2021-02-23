@@ -10,7 +10,6 @@ import cr3 from '../assets/images/cr3.jpeg'
 import PricePlan from '../components/PricePlan'
 import ContactForm from '../components/ContactForm'
 import GetDetails from '../components/GetDetails'
-import floorplan from '../assets/images/floor-plan.png'
 import FloorPlan from '../components/FloorPlan'
 
 export default function Homepage() {
@@ -20,6 +19,7 @@ export default function Homepage() {
         name:"",
         phone:""
     })
+    const form = React.useRef()
     const handleOpen = ()=> {
         setGetContact(true)
     }
@@ -37,15 +37,25 @@ export default function Homepage() {
             [name]:e.target.value
         })
     }
+    const gotoForm = (e)=>{
+        e.preventDefault()
+        window.scrollTo({
+            top: form.current.offsetTop,
+            left: 0,
+            behavior: "smooth"
+        })
+    }
     return (
         <div>
             <Header 
                 onReveal={handleOpen} 
                 showNumber={showContact}
+                onReserve={gotoForm}
             />
             <Hero 
                 onReveal={handleOpen} 
                 showNumber={showContact}
+                onReserve={gotoForm}
             />
             <Intro />
             <Section
@@ -60,7 +70,7 @@ export default function Homepage() {
                 img={[proximityImg]}
                 backgroundColor="#ffffff"
             />
-            <ContactForm />
+            <ContactForm reference={form} />
             <GetDetails 
                 show={getContact}
                 onHide={handleClose}
