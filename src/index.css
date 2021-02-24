@@ -556,3 +556,10 @@ button:focus {
   text-align: center;
   padding: 10px;
 }
+
+.success {
+  color: green;
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+}
