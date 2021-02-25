@@ -70,13 +70,14 @@ body {
 }
 
 .hero {
-  background-image: url('./assets/images/property.png');
+  background-image: url('./assets/images/property.jpg');
   background-position: top;
   padding-left: 10%!important;
 }
 
 .floorplan img {
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .heroContent img {

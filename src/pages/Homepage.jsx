@@ -3,10 +3,11 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Intro from '../components/Intro'
 import Section from '../components/Section'
-import proximityImg from '../assets/images/proximity.png'
-import cr1 from '../assets/images/cr1.jpeg'
-import cr2 from '../assets/images/cr2.jpeg'
-import cr3 from '../assets/images/cr3.jpeg'
+import proximityImg from '../assets/images/proximityAni.gif'
+import cr3 from '../assets/images/cr3.jpg'
+import cr5 from '../assets/images/cr5.jpg'
+import cr4 from '../assets/images/cr4.jpg'
+import cr6 from '../assets/images/cr6.jpg'
 import PricePlan from '../components/PricePlan'
 import ContactForm from '../components/ContactForm'
 import GetDetails from '../components/GetDetails'
@@ -98,7 +99,7 @@ export default function Homepage() {
             <Intro />
             <Section
                 title="Project Gallery" 
-                img={[cr1, cr2, cr3]}
+                img={[cr3, cr4, cr5, cr6]}
                 carousel
             />
             <PricePlan />

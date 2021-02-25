@@ -17,10 +17,9 @@ export default function Hero({
                             <img src={logo} alt="" />
                         </div>
                         <div className="bigText">Presents</div>
-                        <div className="biggestText">WALA PARK</div>
+                        <div className="biggestText">Nova Ridge</div>
                         <div>Serviced plot sales starts from</div>
-                        <div style={{marginTop:"20px"}} className="bigColoredText">40ft x 70ft for &#8373;40,000 (260sqm)</div>
-                        <div style={{marginBottom:"20px"}} className="bigColoredText">50ft x 70ft for &#8373;50,000 (325sqm)</div>
+                        <div style={{marginTop:"20px"}} className="bigColoredText">40ft x 70ft for &#8373;130,790 (260sqm)</div>
                         <Row>
                             <Col>
                                 <div className="callToActionWrapper">

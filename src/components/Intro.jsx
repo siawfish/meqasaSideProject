@@ -11,14 +11,17 @@ export default function Intro() {
                         <Row>
                             <Col>
                                 <div className="introWrapper">
-                                    <div className="normalBoldText" style={{marginBottom:20}} >Introducing Wala Park</div>
+                                    <div className="normalBoldText" style={{marginBottom:20}} >Introducing Nova Ridge</div>
                                     <p>
-                                        Wala Park is a new 76-acre residential neighbourhood by Appolonia Development Company Ltd, the owner and developer of 
-                                        Appolonia City, in partnership with the Chiefs, leaders and residents of the Appolonia community.
+                                        Nova Ridge is a gated residential community within Appolonia City which covers a total area
+                                        of 90 acres. It offers 700 serviced plots with fully serviced plots with clean land title to
+                                        individuals who want to build homes to their preferred specifications.
                                     </p>
                                     <p>
-                                        Wala Park is located between Oyibi and Afienya, bordering Appolonia City, Greater Accra’s new city where more than 700 homes 
-                                        are already occupied or under construction, and schools and dozens of businesses are under development.
+                                        As a premium residential complex, Nova Ridge’s serviced plots come with good roads,
+                                        drainage for even the most punishing floods and neighborhood planning that ensures your
+                                        view will never change. Additionally, there is on-site electricity, running water, state of the art
+                                        ICT networking and excellent security systems.
                                     </p>
                                 </div>
                             </Col>
@@ -26,23 +29,34 @@ export default function Intro() {
                         <Row>
                             <Col>
                                 <div className="introWrapper">
-                                    <div className="normalBoldText" style={{marginBottom:20, marginTop:-30}} >Infrastructure</div>
+                                    <div className="normalBoldText" style={{marginBottom:20, marginTop:-30}} >Amenities</div>
                                     <ul>
                                         <li>
-                                            The government, through the Electricity Company of Ghana, will provide power, as is
-                                            its obligation once there is a critical mass of homeowners
+                                            Gated community with 24hr security
                                         </li>
                                         <li>
-                                            Cleared and provision of accessible roads but with no concrete drains and tarmac.
-                                            The expectation is that over time the government will complete the roads with
-                                            tarmac.
+                                            Tarred roads with underground utilities: including water, power, sewage and ICT
                                         </li>
                                         <li>
-                                            Residents will still benefit from the services within Appolonia City, such as nearby
-                                            shops, medical facilities, schools and parks and open spaces.
+                                            Landscaped common areas and club house with swimming pool
                                         </li>
                                         <li>
-                                            Cleared site, Cut and levelled ground with allotted plots
+                                            Estate Management
+                                        </li>
+                                        <li>
+                                            Club house
+                                        </li>
+                                        <li>
+                                            Jogging &amp; biking trail
+                                        </li>
+                                        <li>
+                                            On-site electricity
+                                        </li>
+                                        <li>
+                                            Running water
+                                        </li>
+                                        <li>
+                                            Connection to sewerage
                                         </li>
                                     </ul>
                                 </div>

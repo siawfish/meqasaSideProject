@@ -21,14 +21,14 @@ export default function Section({
 
     const previous = ()=> {
         if(index<=0){
-            setIndex(2)
+            setIndex(3)
             return
         }
         setIndex(index-1)
     }
 
     const next = ()=> {
-        if(index>=2){
+        if(index>=3){
             setIndex(0)
             return
         }
