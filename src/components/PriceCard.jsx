@@ -1,70 +1,28 @@
 import React from 'react'
 import { Col, Table } from 'react-bootstrap'
-import { oneYearPlan, twoYearsPlan } from '../utils/data'
-import numeral from 'numeral'
+import { plans } from '../utils/data'
 
-export default function PriceCard({
-    duration
-}) {
-    let plan = []
-    if(duration==="One Year"){
-        plan = oneYearPlan
-    } else {
-        plan = twoYearsPlan
-    }
+export default function PriceCard() {
     return (
-        <Col sm={12} lg={6}>
-            <div style={{marginBottom:20, fontWeight:"bold"}}>{duration} Plan</div>
+        <Col sm={12} lg={12}>
             <Table striped bordered responsive hover>
                 <thead>
                     <tr>
-                        <th style={{textAlign:"center"}}>Plot Size</th>
-                        <th style={{textAlign:"center"}}>Price</th>
-                        <th style={{textAlign:"center"}}>Initial Deposit</th>
-                        <th style={{textAlign:"center"}}>Monthly Payment</th>
+                        <th style={{textAlign:"center"}}>Plot type (ft)</th>
+                        <th style={{textAlign:"center"}}>Land area (sqm)</th>
+                        <th style={{textAlign:"center"}}>Price (USD)</th>
+                        <th style={{textAlign:"center"}}>Price (GHS)</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr style={{backgroundColor:"#262637"}}>
-                        <td style={{textAlign:"center", fontWeight:"bold", color:"#fff"}} colSpan="4">Ghana Cedis (&#8373;)</td>
-                    </tr>
                     {
-                        plan.map(plan=>{
-                            let initialDeposit = 20/100 * plan.price
-                            let monthlyPayment
-                            if(plan.duration==="One Year"){
-                                monthlyPayment = (plan.price - initialDeposit)/12
-                            } else {
-                                monthlyPayment = (plan.price - initialDeposit)/24
-                            } 
+                        plans.map(plan=>{
                             return (
                                 <tr>
-                                    <td>{plan.area}</td>
-                                    <td>{numeral(plan.price).format("0,0.00")}</td>
-                                    <td>{numeral(initialDeposit).format("0,0.00")}</td>
-                                    <td>{numeral(monthlyPayment).format("0,0.00")}</td>
-                                </tr>
-                            )
-                        })
-                    }
-                    <tr style={{backgroundColor:"#262637"}}>
-                        <td style={{textAlign:"center", fontWeight:"bold", color:"#fff"}} colSpan="4">US Dollars ($)</td>
-                    </tr>
-                    {
-                        plan.map(plan=>{
-                            let initialDeposit = 20/100 * plan.priceUSD
-                            let monthlyPayment
-                            if(plan.duration==="One Year"){
-                                monthlyPayment = (plan.priceUSD - initialDeposit)/12
-                            } else if(plan.duration==="Two Year"){
-                                monthlyPayment = (plan.priceUSD - initialDeposit)/24
-                            }
-                            return (
-                                <tr>
-                                    <td>{plan.area}</td>
-                                    <td>{numeral(plan.priceUSD).format("0,0.00")}</td>
-                                    <td>{numeral(initialDeposit).format("0,0.00")}</td>
-                                    <td>{numeral(monthlyPayment).format("0,0.00")}</td>
+                                    <td style={{textAlign:"center"}}>{plan.plot}</td>
+                                    <td style={{textAlign:"center"}}>{plan.area}</td>
+                                    <td style={{textAlign:"center"}}>{plan.price}</td>
+                                    <td style={{textAlign:"center"}}>{plan.priceUSD}</td>
                                 </tr>
                             )
                         })
