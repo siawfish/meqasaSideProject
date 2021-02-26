@@ -209,7 +209,7 @@ export default function ContactForm({
                                 rows={4} 
                             />
                         </Form.Group>
-                        <div className="thickText">If you would like to receive exclusive news and offers from Homeland Dev.</div>
+                        <div className="thickText">If you would like to receive exclusive news and offers from meqasa.com.</div>
                         <div className="thickText">Co, please select your preferred method of communication below:</div>
                         <div className="checkboxWrapper">
                             <Form.Check  

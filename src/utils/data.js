@@ -102,25 +102,25 @@ export const plans = [
     },
     {
         area:"40ft x 70ft (260sqm)",
-        price:"40,000",
+        price:"57,000",
         duration:"Two Years",
-        initialDeposit:"10,000",
-        monthlyPayment:"1,469",
-        totalAmount:"45,245",
-        initialDepositUSD:"1,625",
-        monthlyPaymentUSD:"223",
-        totalAmountUSD:"6,988"
+        initialDeposit:"12,250",
+        monthlyPayment:"1,865",
+        totalAmount:"57,000",
+        initialDepositUSD:"1,950",
+        monthlyPaymentUSD:"269",
+        totalAmountUSD:"8,400"
     },
     {
         area:"50ft x 70ft (325sqm)",
-        price:"50,000",
+        price:"71,400",
         duration:"Two Years",
-        initialDeposit:"12,500",
-        monthlyPayment:"1,944",
-        totalAmount:"59,167",
-        initialDepositUSD:"2,125",
-        monthlyPaymentUSD:"292",
-        totalAmountUSD:"9,138"
+        initialDeposit:"15,250",
+        monthlyPayment:"2,340",
+        totalAmount:"71,400",
+        initialDepositUSD:"2,425",
+        monthlyPaymentUSD:"336",
+        totalAmountUSD:"10,500"
     }
 ]
 
