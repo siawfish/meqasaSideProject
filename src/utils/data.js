@@ -77,50 +77,153 @@ export const investments = [
 
 export const planDuration = ["One Year", "Two Years"]
 
-export const plans = [
+export const oneYearPlan = [
     {
-        area:"40ft x 70ft (260sqm)",
-        price:"40,000",
+        area:"40ft x 60ft (223.0sqm)",
+        price:131544,
         duration:"One Year",
-        initialDeposit:"10,000",
-        monthlyPayment:"2,500",
-        totalAmount:"40,000",
-        initialDepositUSD:"1,625",
-        monthlyPaymentUSD:"406",
-        totalAmountUSD:"6,500"
+        priceUSD:18900
     },
     {
-        area:"50ft x 70ft (325sqm)",
-        price:"50,000",
+        area:"40ft x 70ft (260.1sqm)",
+        price:153468,
         duration:"One Year",
-        initialDeposit:"12,500",
-        monthlyPayment:"3,125",
-        totalAmount:"50,000",
-        initialDepositUSD:"2,125",
-        monthlyPaymentUSD:"531",
-        totalAmountUSD:"8,500"
+        priceUSD:22050
     },
     {
-        area:"40ft x 70ft (260sqm)",
-        price:"40,000",
-        duration:"Two Years",
-        initialDeposit:"10,000",
-        monthlyPayment:"1,469",
-        totalAmount:"45,245",
-        initialDepositUSD:"1,625",
-        monthlyPaymentUSD:"223",
-        totalAmountUSD:"6,988"
+        area:"50ft x 60ft (278.7sqm)",
+        price:164430,
+        duration:"One Year",
+        priceUSD:23625
     },
     {
-        area:"50ft x 70ft (325sqm)",
-        price:"50,000",
-        duration:"Two Years",
-        initialDeposit:"12,500",
-        monthlyPayment:"1,944",
-        totalAmount:"59,167",
-        initialDepositUSD:"2,125",
-        monthlyPaymentUSD:"292",
-        totalAmountUSD:"9,138"
+        area:"50ft x 70ft (325.2sqm)",
+        price:193662,
+        duration:"One Year",
+        priceUSD:27825
+    },
+    {
+        area:"50ft x 80ft (371.6sqm)",
+        price:219240,
+        duration:"One Year",
+        priceUSD:31500
+    },
+    {
+        area:"50ft x 90ft (429.1sqm)",
+        price:255780,
+        duration:"One Year",
+        priceUSD:36750
+    },
+    {
+        area:"60ft x 70ft (390.2sqm)",
+        price:255780,
+        duration:"One Year",
+        priceUSD:36750
+    },
+    {
+        area:"60ft x 80ft (445.9sqm)",
+        price:263088,
+        duration:"One Year",
+        priceUSD:37800
+    },
+    {
+        area:"60ft x 90ft (501.7sqm)",
+        price:295974,
+        duration:"One Year",
+        priceUSD:42525
+    },
+    {
+        area:"70ft x 90ft (585.3sqm)",
+        price:49350,
+        duration:"One Year",
+        priceUSD:343476
+    },
+    {
+        area:"70ft x 100ft (650.3sqm)",
+        price:383670,
+        duration:"One Year",
+        priceUSD:55125
+    },
+    {
+        area:"80ft x 100ft (743.2sqm)",
+        price:438480,
+        duration:"One Year",
+        priceUSD:63000
+    }
+]
+
+export const twoYearsPlan = [
+    {
+        area:"40ft x 60ft (223.0sqm)",
+        price:131544,
+        duration:"Two Year",
+        priceUSD:18900
+    },
+    {
+        area:"40ft x 70ft (260.1sqm)",
+        price:153468,
+        duration:"Two Year",
+        priceUSD:22050
+    },
+    {
+        area:"50ft x 60ft (278.7sqm)",
+        price:164430,
+        duration:"Two Year",
+        priceUSD:23625
+    },
+    {
+        area:"50ft x 70ft (325.2sqm)",
+        price:193662,
+        duration:"Two Year",
+        priceUSD:27825
+    },
+    {
+        area:"50ft x 80ft (371.6sqm)",
+        price:219240,
+        duration:"Two Year",
+        priceUSD:31500
+    },
+    {
+        area:"50ft x 90ft (429.1sqm)",
+        price:255780,
+        duration:"Two Year",
+        priceUSD:36750
+    },
+    {
+        area:"60ft x 70ft (390.2sqm)",
+        price:255780,
+        duration:"Two Year",
+        priceUSD:36750
+    },
+    {
+        area:"60ft x 80ft (445.9sqm)",
+        price:263088,
+        duration:"Two Year",
+        priceUSD:37800
+    },
+    {
+        area:"60ft x 90ft (501.7sqm)",
+        price:295974,
+        duration:"Two Year",
+        priceUSD:42525
+    },
+    {
+        area:"70ft x 90ft (585.3sqm)",
+        price:49350,
+        duration:"Two Year",
+        priceUSD:343476
+    },
+    {
+        area:"70ft x 100ft (650.3sqm)",
+        price:383670,
+        duration:"Two Year",
+        priceUSD:55125
+    },
+    {
+        area:"80ft x 100ft (743.2sqm)",
+        price:438480,
+        duration:"Two Year",
+        priceUSD:63000
     }
 ]
 

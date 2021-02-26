@@ -1,13 +1,17 @@
 import React from 'react'
 import { Col, Table } from 'react-bootstrap'
-import { plans } from '../utils/data'
+import { oneYearPlan, twoYearsPlan } from '../utils/data'
+import numeral from 'numeral'
 
 export default function PriceCard({
     duration
 }) {
-    const row = plans.filter(plan=>{
-        return plan.duration===duration
-    })
+    let plan = []
+    if(duration==="One Year"){
+        plan = oneYearPlan
+    } else {
+        plan = twoYearsPlan
+    }
     return (
         <Col sm={12} lg={6}>
             <div style={{marginBottom:20, fontWeight:"bold"}}>{duration} Plan</div>
@@ -25,13 +29,20 @@ export default function PriceCard({
                         <td style={{textAlign:"center", fontWeight:"bold", color:"#fff"}} colSpan="4">Ghana Cedis (&#8373;)</td>
                     </tr>
                     {
-                        row.map(plan=>{
+                        plan.map(plan=>{
+                            let initialDeposit = 20/100 * plan.price
+                            let monthlyPayment
+                            if(plan.duration==="One Year"){
+                                monthlyPayment = (plan.price - initialDeposit)/12
+                            } else {
+                                monthlyPayment = (plan.price - initialDeposit)/24
+                            } 
                             return (
                                 <tr>
                                     <td>{plan.area}</td>
-                                    <td>{plan.totalAmount}</td>
-                                    <td>{plan.initialDeposit}</td>
-                                    <td>{plan.monthlyPayment}</td>
+                                    <td>{numeral(plan.price).format("0,0.00")}</td>
+                                    <td>{numeral(initialDeposit).format("0,0.00")}</td>
+                                    <td>{numeral(monthlyPayment).format("0,0.00")}</td>
                                 </tr>
                             )
                         })
@@ -40,13 +51,20 @@ export default function PriceCard({
                         <td style={{textAlign:"center", fontWeight:"bold", color:"#fff"}} colSpan="4">US Dollars ($)</td>
                     </tr>
                     {
-                        row.map(plan=>{
+                        plan.map(plan=>{
+                            let initialDeposit = 20/100 * plan.priceUSD
+                            let monthlyPayment
+                            if(plan.duration==="One Year"){
+                                monthlyPayment = (plan.priceUSD - initialDeposit)/12
+                            } else if(plan.duration==="Two Year"){
+                                monthlyPayment = (plan.priceUSD - initialDeposit)/24
+                            }
                             return (
                                 <tr>
                                     <td>{plan.area}</td>
-                                    <td>{plan.totalAmountUSD}</td>
-                                    <td>{plan.initialDepositUSD}</td>
-                                    <td>{plan.monthlyPaymentUSD}</td>
+                                    <td>{numeral(plan.priceUSD).format("0,0.00")}</td>
+                                    <td>{numeral(initialDeposit).format("0,0.00")}</td>
+                                    <td>{numeral(monthlyPayment).format("0,0.00")}</td>
                                 </tr>
                             )
                         })

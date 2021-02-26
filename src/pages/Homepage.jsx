@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Intro from '../components/Intro'
 import Section from '../components/Section'
-import proximityImg from '../assets/images/proximityAni.gif'
+import proximityImg from '../assets/images/proximity.png'
 import cr3 from '../assets/images/cr3.jpg'
 import cr5 from '../assets/images/cr5.jpg'
 import cr4 from '../assets/images/cr4.jpg'
@@ -27,7 +27,7 @@ export default function Homepage() {
     const [contactDetails, setContactDetails] = React.useState({
         name:"",
         phone:"",
-        uid:1714
+        uid:1717
     })
     const [err, setErr] = React.useState("")
     const form = React.useRef()

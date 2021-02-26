@@ -25,7 +25,7 @@ export default function ContactForm({
         bysms:false,
         byphone:false,
         bywhats:false,
-        uid:1714
+        uid:1717
     })
     const [err, setErr] = React.useState("")
     const [success, setSuccess] = React.useState("")
@@ -50,6 +50,7 @@ export default function ContactForm({
 
     const onChange = (name, e)=> {
         setErr("")
+        setSuccess("")
         if(name==="bymail"||name==="bysms"||name==="byphone"||name==="bywhats"){
             setDetails({
                 ...details,
@@ -98,6 +99,7 @@ export default function ContactForm({
     const onSubmit = (e)=> {
         e.preventDefault()
         setErr("")
+        setSuccess("")
         if(!validate()){
             return
         }
@@ -209,7 +211,7 @@ export default function ContactForm({
                                 rows={4} 
                             />
                         </Form.Group>
-                        <div className="thickText">If you would like to receive exclusive news and offers from Meqasa.</div>
+                        <div className="thickText">If you would like to receive exclusive news and offers from meqasa.com</div>
                         <div className="thickText">Co, please select your preferred method of communication below:</div>
                         <div className="checkboxWrapper">
                             <Form.Check  
