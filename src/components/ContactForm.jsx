@@ -27,15 +27,19 @@ export default function ContactForm({
         bywhats:false,
         uid:1717
     })
+    const nameInput = React.useRef(null)
+    const phoneInput = React.useRef(null)
+    const emailInput = React.useRef(null)
+
     const [err, setErr] = React.useState("")
     const [success, setSuccess] = React.useState("")
+    const [isLoading, setIsLoading] = React.useState(false)
     
     const resetForm = ()=> {
         setDetails({
             name:"",
             phone:"",
             email:"",
-            address:"",
             country:"",
             plots:"",
             where:"",
@@ -44,13 +48,12 @@ export default function ContactForm({
             bysms:false,
             byphone:false,
             bywhats:false,
-            uid:1714
+            uid:1717
         })
     }
 
     const onChange = (name, e)=> {
         setErr("")
-        setSuccess("")
         if(name==="bymail"||name==="bysms"||name==="byphone"||name==="bywhats"){
             setDetails({
                 ...details,
@@ -62,24 +65,38 @@ export default function ContactForm({
                 [name]:e.target.value
             })
         }
+        if(name==="name"){
+            nameInput.current.style.borderColor = "#ced4da"
+        }
+        if(name==="email"){
+            emailInput.current.style.borderColor = "#ced4da"
+        }
+        if(name==="phone"){
+            phoneInput.current.style.borderColor = "#ced4da"
+        }
     }
 
     const validate = ()=> {
         const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
         if(details.name.length<3){
+            nameInput.current.style.borderColor = "red"
+            nameInput.current.style.borderWidth = 1
+            nameInput.current.focus()
             setErr("Kindly enter a valid name")
             return false
         }
         if(!details.email.match(mailformat)){
+            emailInput.current.style.borderColor = "red"
+            emailInput.current.style.borderWidth = 1
+            emailInput.current.focus()
             setErr("Kindly enter a valid email")
             return false
         }
-        if(details.address===""||details.country===""||details.plots===""||details.where===""||details.comment===""){
-            setErr("Kindly complete form")
-            return false
-        }
-        if(details.bymail===false&&details.bysms===false&&details.byphone===false&&details.bywhats===false){
-            setErr("Kindly select atleast one contact means")
+        if(details.phone.length<10){
+            phoneInput.current.style.borderColor = "red"
+            phoneInput.current.style.borderWidth = 1
+            phoneInput.current.focus()
+            setErr("Kindly enter a valid phone number")
             return false
         }
         return true
@@ -98,25 +115,32 @@ export default function ContactForm({
 
     const onSubmit = (e)=> {
         e.preventDefault()
+        setIsLoading(true)
         setErr("")
-        setSuccess("")
         if(!validate()){
+            setIsLoading(false)
             return
         }
         api.post('p-reserve', decypherContactChannel())
         .then(res=>{
             if(res.ok){
                 if(res.data.status==="success"){
+                    setIsLoading(false)
                     setSuccess("Thanks for showing interest. You will be contacted by an agent very soon.")
                     resetForm()
                 } else {
+                    setIsLoading(false)
                     setErr("Sorry request failed. Please try again")
                 }
             } else {
+                setIsLoading(false)
                 setErr(res.problem)
             }
         })
-        .catch(e=>console.log(e))
+        .catch(e=>{
+            setIsLoading(false)
+            console.log(e)
+        })
     }
     
     return (
@@ -129,6 +153,7 @@ export default function ContactForm({
                         <div className="success">{success}</div>
                         <Form.Group controlId="name">
                             <Form.Control 
+                                ref={nameInput}
                                 onChange={(e)=>onChange("name",e)} 
                                 defaultValue={details.name} size="lg" 
                                 placeholder="Enter full name" 
@@ -138,6 +163,7 @@ export default function ContactForm({
                         <Form.Row>
                             <Form.Group as={Col} controlId="email">
                                 <Form.Control 
+                                    ref={emailInput}
                                     onChange={(e)=>onChange("email",e)} 
                                     defaultValue={details.email} 
                                     size="lg" 
@@ -148,6 +174,7 @@ export default function ContactForm({
 
                             <Form.Group as={Col} controlId="phone">
                                 <Form.Control 
+                                    ref={phoneInput}
                                     onChange={(e)=>onChange("phone",e)} 
                                     defaultValue={details.phone} 
                                     size="lg" 
@@ -157,27 +184,15 @@ export default function ContactForm({
                             </Form.Group>
                         </Form.Row>
 
-                        <Form.Row>
-                            <Form.Group as={Col} controlId="address">
-                                <Form.Control 
-                                    onChange={(e)=>onChange("address",e)} 
-                                    defaultValue={details.address} 
-                                    size="lg" 
-                                    type="text" 
-                                    placeholder="Enter address" 
-                                />
-                            </Form.Group>
-
-                            <Form.Group as={Col} controlId="country">
-                                <Form.Control 
-                                    onChange={(e)=>onChange("country",e)} 
-                                    defaultValue={details.country} 
-                                    size="lg" 
-                                    type="text" 
-                                    placeholder="Country" 
-                                />
-                            </Form.Group>
-                        </Form.Row>
+                        <Form.Group controlId="country">
+                            <Form.Control 
+                                onChange={(e)=>onChange("country",e)} 
+                                defaultValue={details.country} 
+                                size="lg" 
+                                type="text" 
+                                placeholder="Country" 
+                            />
+                        </Form.Group>
 
                         <Form.Row>
                             <Form.Group as={Col} controlId="plots">
@@ -211,7 +226,7 @@ export default function ContactForm({
                                 rows={4} 
                             />
                         </Form.Group>
-                        <div className="thickText">If you would like to receive exclusive news and offers from meqasa.com</div>
+                        <div className="thickText">If you would like to receive exclusive news and offers from meqasa.com.</div>
                         <div className="thickText">Co, please select your preferred method of communication below:</div>
                         <div className="checkboxWrapper">
                             <Form.Check  
@@ -239,7 +254,13 @@ export default function ContactForm({
                                 onChange={(e)=>onChange("bywhats",!details.bywhats)}
                             />
                         </div>
-                        <Button onClick={onSubmit}>SUBMIT</Button>
+                        <Button onClick={onSubmit}>
+                            {
+                                !isLoading ?
+                                "SUBMIT" :
+                                "SUBMITTING..."
+                            }
+                        </Button>
                     </div>
                 </Col>
             </Row>
