@@ -30,12 +30,13 @@ export default function ContactForm({
     const nameInput = React.useRef(null)
     const phoneInput = React.useRef(null)
     const emailInput = React.useRef(null)
-
+    const contactForm = React.useRef(null)
     const [err, setErr] = React.useState("")
     const [success, setSuccess] = React.useState("")
     const [isLoading, setIsLoading] = React.useState(false)
     
     const resetForm = ()=> {
+        contactForm.current.reset()
         setDetails({
             name:"",
             phone:"",
@@ -148,7 +149,7 @@ export default function ContactForm({
             <div className="biggerText">Register your interest</div>
             <Row>
                 <Col>
-                    <div>
+                    <Form ref={contactForm}>
                         <div className="err">{err}</div>
                         <div className="success">{success}</div>
                         <Form.Group controlId="name">
@@ -261,7 +262,7 @@ export default function ContactForm({
                                 "SUBMITTING..."
                             }
                         </Button>
-                    </div>
+                    </Form>
                 </Col>
             </Row>
         </Container>
