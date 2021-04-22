@@ -16,7 +16,7 @@ export default function Header({
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
                 <NavButton
-                    label="0577**** View Phone"    
+                    label="0501**** View Phone"    
                     onReveal={onReveal}
                     number={number}
                 />
@@ -28,3 +28,4 @@ export default function Header({
         </Navbar>
     )
 }
+

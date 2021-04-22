@@ -24,7 +24,7 @@ export default function Hero({
                             <Col>
                                 <div className="callToActionWrapper">
                                     <RevealButton 
-                                        label="0577**** View Phone"
+                                        label="0501**** View Phone"
                                         number={number}
                                         onReveal={onReveal}
                                     />
