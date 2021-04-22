@@ -19,8 +19,8 @@ export default function Hero({
                         <div className="bigText">Presents</div>
                         <div className="biggestText">WALA PARK</div>
                         <div>Serviced plot sales starts from</div>
-                        <div style={{marginTop:"20px"}} className="bigColoredText">40ft x 70ft for &#8373;40,000 (260sqm)</div>
-                        <div style={{marginBottom:"20px"}} className="bigColoredText">50ft x 70ft for &#8373;50,000 (325sqm)</div>
+                        <div style={{marginTop:"20px"}} className="bigColoredText">40ft x 70ft for &#8373;49,000 (260sqm)</div>
+                        <div style={{marginBottom:"20px"}} className="bigColoredText">50ft x 70ft for &#8373;61,000 (325sqm)</div>
                         <Row>
                             <Col>
                                 <div className="callToActionWrapper">

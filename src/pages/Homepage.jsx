@@ -22,7 +22,7 @@ const api = create({
 
 export default function Homepage() {
     const [getContact, setGetContact] = React.useState(false)
-    const [contact, setContact] = React.useState("0244 **** View Phone")
+    const [contact, setContact] = React.useState("0501 **** View Phone")
     const [contactDetails, setContactDetails] = React.useState({
         name:"",
         phone:"",

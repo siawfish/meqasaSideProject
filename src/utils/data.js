@@ -80,46 +80,46 @@ export const planDuration = ["One Year", "Two Years"]
 export const plans = [
     {
         area:"40ft x 70ft (260sqm)",
-        price:"40,000",
+        price:"49,000",
         duration:"One Year",
-        initialDeposit:"10,000",
-        monthlyPayment:"2,500",
-        totalAmount:"40,000",
-        initialDepositUSD:"1,625",
-        monthlyPaymentUSD:"406",
-        totalAmountUSD:"6,500"
+        initialDeposit:"12,250",
+        monthlyPayment:"3,062.50",
+        totalAmount:"49,000",
+        initialDepositUSD:"1,950",
+        monthlyPaymentUSD:"487.50",
+        totalAmountUSD:"7,800"
     },
     {
         area:"50ft x 70ft (325sqm)",
-        price:"50,000",
+        price:"61,000",
         duration:"One Year",
-        initialDeposit:"12,500",
-        monthlyPayment:"3,125",
-        totalAmount:"50,000",
-        initialDepositUSD:"2,125",
-        monthlyPaymentUSD:"531",
-        totalAmountUSD:"8,500"
+        initialDeposit:"15,250",
+        monthlyPayment:"3,812.50",
+        totalAmount:"61,000",
+        initialDepositUSD:"2,425",
+        monthlyPaymentUSD:"606.25",
+        totalAmountUSD:"9,700"
     },
     {
         area:"40ft x 70ft (260sqm)",
         price:"57,000",
         duration:"Two Years",
-        initialDeposit:"12,250",
-        monthlyPayment:"1,865",
+        initialDeposit:"14,250",
+        monthlyPayment:"1,781.25",
         totalAmount:"57,000",
-        initialDepositUSD:"1,950",
-        monthlyPaymentUSD:"269",
+        initialDepositUSD:"2,100",
+        monthlyPaymentUSD:"262.50",
         totalAmountUSD:"8,400"
     },
     {
         area:"50ft x 70ft (325sqm)",
         price:"71,400",
         duration:"Two Years",
-        initialDeposit:"15,250",
-        monthlyPayment:"2,340",
+        initialDeposit:"17,850",
+        monthlyPayment:"2,231.35",
         totalAmount:"71,400",
-        initialDepositUSD:"2,425",
-        monthlyPaymentUSD:"336",
+        initialDepositUSD:"2,625",
+        monthlyPaymentUSD:"328.13",
         totalAmountUSD:"10,500"
     }
 ]
