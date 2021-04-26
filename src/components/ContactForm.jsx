@@ -201,7 +201,7 @@ export default function ContactForm({
                                     onChange={(e)=>onChange("plots",e)} 
                                     defaultValue={details.plots} 
                                     size="lg" 
-                                    type="text" 
+                                    type="number" 
                                     placeholder="Number of plots" 
                                 />
                             </Form.Group>
